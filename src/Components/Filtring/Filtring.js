@@ -2,6 +2,8 @@ import "./filtring.css";
 import ReactStars from "react-rating-stars-component";
 import {useRef,useState} from "react";
 
+// the MovieList and Filter components are rendered with the filtered movies and event handlers respectively, 
+// along with a button to add a new movie to the state.
 
 export default function Filtring({filter}) {
     let searchRef = useRef();

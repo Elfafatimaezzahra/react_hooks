@@ -20,8 +20,9 @@ export default function AddMovie({adding}) {
         let movieObject = {title:titleRef.current.value, img:imgurlRef.current.value, description:descRef.current.value, posterURL:posurlRef.current.value, rating:rate};
         adding(movieObject);
 
-        //save all this information in localStorage
+    
     }
+    
 
     return (
         <div className="AddMovie">

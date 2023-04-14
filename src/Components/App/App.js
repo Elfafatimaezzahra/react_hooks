@@ -15,6 +15,11 @@ const info = [
   { title:'The Walking Dead', img:'/image/The Walking Dead.jpg', description:"Police officer (Rick) wakes up from a coma in which he was in for several months as a result of being shot while on the job, to find that the world has been ravaged by the zombies and he is the only survivor. An army of the zombies, events escalate.", posterURL:"www.thewalkingdead.com", rating:8.2 },
 ];
 
+// the App component holds the state of the movies, title filter, 
+// and rating filter using the useState hook. 
+// It also defines the event handlers for title and rating filter changes, 
+// as well as for adding a new movie to the movies state array.
+
 function App(){
   
   const [list,setList] = useState(info);
@@ -28,7 +33,8 @@ function App(){
     }
   }
 
-
+  // The filteredMovies constant is used to filter the movies based on the title and rating filter values. 
+  
   function filter(key, rate){
     setKeyword(key);
     setRate(rate);
